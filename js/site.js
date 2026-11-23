@@ -1,6 +1,6 @@
 // Contagem de visitas e cliques: os números continuam aparecendo no painel do administrador.
 (function () {
-  var TRACK_URL = "https://video-facil.floot.app/_api/analytics/track";
+  var TRACK_URL = "https://video-facil-api-z32n.onrender.com/api/site/event";
 
   function visitorId() {
     var key = "video_facil_visitor_id";
@@ -23,9 +23,7 @@
       if (window.clarity) window.clarity("event", eventName);
       var body = JSON.stringify({
         eventName: eventName,
-        visitorId: visitorId(),
-        source: "site-proprio",
-        paymentMethod: null
+        visitorId: visitorId()
       });
       var blob = new Blob([body], { type: "text/plain;charset=UTF-8" });
       if (!(navigator.sendBeacon && navigator.sendBeacon(TRACK_URL, blob))) {
