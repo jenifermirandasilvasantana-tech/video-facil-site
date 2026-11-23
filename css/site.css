@@ -402,3 +402,27 @@ footer { padding: 44px 0 52px; border-top: 1px solid var(--border); color: var(-
 .waiting { display: flex; gap: 10px; align-items: center; justify-content: center; margin: 18px 0 0; }
 .waiting span { width: 10px; height: 10px; border-radius: 50%; background: var(--success); animation: pulsar 1.4s infinite; }
 @keyframes pulsar { 50% { opacity: .25; } }
+
+/* --- Página que vende --- */
+[hidden] { display: none !important; }
+.risk { margin: 18px 0 0; color: #5be0a8; font-weight: 600; }
+.offer { list-style: none; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); width: 100%; max-width: 780px; background: var(--panel); border: 1px solid var(--border-strong); border-radius: 18px; overflow: hidden; }
+.offer li { padding: 18px 12px; border-left: 1px solid var(--border); }
+.offer li:first-child { border-left: 0; }
+.offer b { display: block; font-size: 22px; letter-spacing: -.02em; }
+.offer span { color: var(--muted); font-size: 13px; }
+.mid-cta { margin-top: 44px; text-align: center; }
+.mid-cta p { margin: 0 0 14px; font-size: 18px; font-weight: 700; }
+.plans { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; max-width: 920px; margin: 0 auto; align-items: center; }
+.plan-after { background: var(--panel); border-color: var(--border); box-shadow: none; }
+.plan-after .price { font-size: 38px; }
+.fine-print { text-align: center; color: #737c8d; font-size: 13px; margin: 22px 0 0; }
+.sticky-cta { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 30; display: flex; align-items: center; gap: 18px; padding: 10px 10px 10px 22px; background: rgba(21, 25, 34, .95); border: 1px solid var(--border-strong); border-radius: 18px; box-shadow: 0 20px 50px rgba(0, 0, 0, .5); white-space: nowrap; }
+@media (max-width: 760px) {
+  .offer { grid-template-columns: 1fr 1fr; }
+  .offer li:nth-child(3) { border-left: 0; }
+  .offer li:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .plans { grid-template-columns: 1fr; }
+  .sticky-cta { left: 12px; right: 12px; transform: none; justify-content: space-between; padding-left: 16px; font-size: 14px; }
+  .btn-lg { white-space: normal; text-align: center; height: auto; min-height: 56px; padding: 12px 22px; }
+}

@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/site.css?v=2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@
     "mainEntity": [
       { "@type": "Question", "name": "O Vídeo Fácil é grátis?", "acceptedAnswer": { "@type": "Answer", "text": "Você pode usar o programa gratuitamente por 30 dias. Depois, a renovação é manual por R$ 19,90 para mais 30 dias." } },
       { "@type": "Question", "name": "Preciso criar conta para testar?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O teste de 30 dias não exige cadastro para começar a usar." } },
-      { "@type": "Question", "name": "Funciona em qual sistema?", "acceptedAnswer": { "@type": "Answer", "text": "O Vídeo Fácil foi feito para Windows 10 e Windows 11." } },
+      { "@type": "Question", "name": "Funciona em qual sistema?", "acceptedAnswer": { "@type": "Answer", "text": "Funciona em computadores com Windows 10 ou Windows 11, de 64 bits. Não funciona no Windows 7, no celular ou no Mac." } },
       { "@type": "Question", "name": "Quais formatos posso baixar?", "acceptedAnswer": { "@type": "Answer", "text": "Vídeo em MP4, MKV ou WEBM, ou só o áudio em MP3." } },
       { "@type": "Question", "name": "Consigo baixar em 1080p, 2K ou 4K?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, quando essas qualidades estiverem disponíveis no vídeo original." } },
       { "@type": "Question", "name": "A cobrança é automática?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A renovação é manual. Você só paga novamente quando quiser liberar mais 30 dias." } },
@@ -76,20 +76,22 @@
     <div class="container hero-center">
       <div class="hero-text">
         <span class="pill">30 dias grátis · sem cartão · sem cadastro</span>
-        <h1>Seus vídeos do YouTube no computador <span class="accent">em um clique.</span></h1>
-        <p class="lead">Copie o link, clique em <strong>Colar link</strong> e pronto: o vídeo baixa sozinho, em até 4K, ou só o áudio em MP3. Sem propagandas, sem janelas falsas, sem complicação.</p>
+        <h1>Baixe os vídeos que você precisa. <span class="accent">Com um clique.</span></h1>
+        <p class="lead">Chega de site cheio de propaganda e botão falso. Copie o link do YouTube, clique em <strong>Colar link</strong> e o vídeo já começa a baixar no seu computador.</p>
         <div class="cta-row">
           <a class="btn btn-primary btn-lg" data-track="download_click"
              href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-            Baixar grátis para Windows
+            Quero testar 30 dias grátis
           </a>
           <a class="btn btn-ghost btn-lg" href="#como-instalar">Como instalar</a>
         </div>
-        <ul class="checks">
-          <li>Windows 10 e 11</li>
-          <li>Instala em 1 minuto</li>
-          <li>Depois, menos de R$ 0,70 por dia</li>
+        <p class="risk">Você usa 30 dias sem pagar nada. Não gostou? É só não renovar.</p>
+        <ul class="offer" aria-label="Condições">
+          <li><b>R$ 0</b><span>para começar</span></li>
+          <li><b>30 dias</b><span>grátis, completo</span></li>
+          <li><b>Sem cartão</b><span>e sem cadastro</span></li>
+          <li><b>R$ 0,66</b><span>por dia, se continuar*</span></li>
         </ul>
       </div>
 
@@ -105,7 +107,7 @@
             <div class="m-right">
               <span class="m-btn">Ativar assinatura</span>
               <span class="m-pill">● Teste grátis · 30 dias</span>
-              <span class="m-ver">v1.11.47</span>
+              <span class="m-ver">v1.11.48</span>
             </div>
           </div>
           <div class="m-body">
@@ -167,7 +169,32 @@
     </div>
   </section>
 
-  <section class="section-alt" id="para-que-serve">
+  <section class="section-alt" id="comparativo">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Por que o Vídeo Fácil</span>
+        <h2>Chega de site cheio de pegadinha.</h2>
+        <p>Muitos sites "grátis" de baixar vídeo vivem de propaganda, janelas que abrem sozinhas e botões falsos de download.</p>
+      </div>
+      <div class="compare" role="table" aria-label="Comparação entre sites de baixar vídeo e o Vídeo Fácil">
+        <div class="c-row c-head" role="row">
+          <span role="columnheader"></span>
+          <span role="columnheader">Sites de baixar vídeo</span>
+          <span role="columnheader" class="c-us">Vídeo Fácil</span>
+        </div>
+        <div class="c-row" role="row"><span role="rowheader">Sem propagandas e sem janelas que abrem sozinhas</span><span class="no" role="cell">Raramente</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Sem botões falsos de "Download"</span><span class="no" role="cell">Raramente</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Qualidade até 4K</span><span class="mid" role="cell">Às vezes</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Só o áudio em MP3</span><span class="mid" role="cell">Às vezes</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Histórico dos seus downloads</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Pausar e continuar o download</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
+        <div class="c-row" role="row"><span role="rowheader">Atualizações automáticas</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
+      </div>
+      <div class="mid-cta"><p>Veja você mesmo a diferença.</p><a class="btn btn-primary btn-lg" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Quero testar 30 dias grátis</a></div>
+    </div>
+  </section>
+
+  <section id="para-que-serve">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Para que serve</span>
@@ -196,6 +223,34 @@
           <p>Aquele vídeo que você quer ter sempre à mão, sem precisar procurar de novo.</p>
         </div>
       </div>
+      <div class="mid-cta"><p>Qual vídeo você vai baixar primeiro?</p><a class="btn btn-primary btn-lg" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Quero testar 30 dias grátis</a></div>
+    </div>
+  </section>
+
+  <section class="section-alt" id="como-funciona">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do link ao arquivo em 3 passos.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Copie o link</h3>
+          <p>No YouTube, copie o endereço do vídeo que você quer baixar.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Clique em Colar link</h3>
+          <p>O Vídeo Fácil mostra a imagem, o nome e a duração do vídeo e já começa a baixar.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Pronto</h3>
+          <p>O arquivo fica salvo na pasta que você escolheu e aparece no seu histórico.</p>
+        </div>
+      </div>
+      <p class="note"><strong>Dica:</strong> antes de colar o link, escolha o formato (MP4, MKV, WEBM ou MP3), a qualidade e a pasta onde salvar. O programa lembra das suas escolhas.</p>
     </div>
   </section>
 
@@ -241,63 +296,12 @@
     </div>
   </section>
 
-  <section class="section-alt" id="comparativo">
-    <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Por que o Vídeo Fácil</span>
-        <h2>Chega de site cheio de pegadinha.</h2>
-        <p>Muitos sites "grátis" de baixar vídeo vivem de propaganda, janelas que abrem sozinhas e botões falsos de download.</p>
-      </div>
-      <div class="compare" role="table" aria-label="Comparação entre sites de baixar vídeo e o Vídeo Fácil">
-        <div class="c-row c-head" role="row">
-          <span role="columnheader"></span>
-          <span role="columnheader">Sites de baixar vídeo</span>
-          <span role="columnheader" class="c-us">Vídeo Fácil</span>
-        </div>
-        <div class="c-row" role="row"><span role="rowheader">Sem propagandas e sem janelas que abrem sozinhas</span><span class="no" role="cell">Raramente</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Sem botões falsos de "Download"</span><span class="no" role="cell">Raramente</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Qualidade até 4K</span><span class="mid" role="cell">Às vezes</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Só o áudio em MP3</span><span class="mid" role="cell">Às vezes</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Histórico dos seus downloads</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Pausar e continuar o download</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
-        <div class="c-row" role="row"><span role="rowheader">Atualizações automáticas</span><span class="no" role="cell">Não</span><span class="yes" role="cell">Sim</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="como-funciona">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Como funciona</span>
-        <h2>Do link ao arquivo em 3 passos.</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <h3>Copie o link</h3>
-          <p>No YouTube, copie o endereço do vídeo que você quer baixar.</p>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <h3>Clique em Colar link</h3>
-          <p>O Vídeo Fácil mostra a imagem, o nome e a duração do vídeo e já começa a baixar.</p>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <h3>Pronto</h3>
-          <p>O arquivo fica salvo na pasta que você escolheu e aparece no seu histórico.</p>
-        </div>
-      </div>
-      <p class="note"><strong>Dica:</strong> antes de colar o link, escolha o formato (MP4, MKV, WEBM ou MP3), a qualidade e a pasta onde salvar. O programa lembra das suas escolhas.</p>
-    </div>
-  </section>
-
   <section class="section-alt" id="como-instalar">
     <div class="container install">
       <div>
         <div class="section-head" style="margin-bottom:28px">
           <span class="eyebrow">Como instalar</span>
-          <h2>Pronto para usar em 1 minuto.</h2>
+          <h2>Instalar é simples.</h2>
           <p>Se aparecer um aviso azul do Windows, fique tranquilo: ele aparece com programas novos que o Windows ainda não conhece.</p>
         </div>
         <ol class="install-steps">
@@ -321,27 +325,38 @@
   </section>
 
   <section id="preco">
-    <div class="container price-wrap">
-      <div class="section-head" style="margin-bottom:0">
+    <div class="container">
+      <div class="section-head center">
         <span class="eyebrow">Preço</span>
-        <h2>Experimente antes de pagar.</h2>
-        <p>Use por 30 dias sem pagar nada e sem cadastrar cartão. Gostou? Renove por mais 30 dias. Sem cobrança automática e sem fidelidade.</p>
+        <h2>Comece hoje sem pagar nada.</h2>
+        <p>Use o programa completo por 30 dias. Só paga se quiser continuar.</p>
       </div>
-      <div class="price-card">
-        <span class="price-badge">30 DIAS GRÁTIS PARA TESTAR</span>
-        <div class="price-label">Depois do teste</div>
-        <p class="price">R$ 19,90 <small>por 30 dias</small></p>
-        <p class="per-day">Menos de <b>R$ 0,70 por dia</b></p>
-        <ul class="price-list">
-          <li>Pagamento por Pix ou cartão</li>
-          <li>Liberação automática no programa</li>
-          <li>Renovação manual, sem surpresa</li>
-          <li>Atualizações automáticas incluídas</li>
-        </ul>
-        <a class="btn btn-primary" data-track="download_click"
-           href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Começar meus 30 dias grátis</a>
-        <p class="small">Já usa o programa? <a href="./assinar/" data-track="activate_click" style="color:var(--blue)">Ativar assinatura</a></p>
+      <div class="plans">
+        <div class="price-card plan-free">
+          <span class="price-badge">COMECE POR AQUI</span>
+          <div class="price-label">Teste completo</div>
+          <p class="price">R$ 0 <small>por 30 dias</small></p>
+          <ul class="price-list">
+            <li>Todos os recursos liberados</li>
+            <li>Sem cartão e sem cadastro</li>
+            <li>Vídeo até 4K e áudio em MP3</li>
+            <li>Não gostou? É só não renovar</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Quero testar 30 dias grátis</a>
+        </div>
+        <div class="price-card plan-after">
+          <div class="price-label">Se quiser continuar</div>
+          <p class="price">R$ 19,90 <small>por 30 dias</small></p>
+          <p class="per-day">Menos de <b>R$ 0,70 por dia*</b></p>
+          <ul class="price-list">
+            <li>Pix ou cartão</li>
+            <li>Licença liberada após a confirmação do pagamento</li>
+            <li>Sem cobrança automática e sem fidelidade</li>
+          </ul>
+          <p class="small">Já usa o programa? <a href="./assinar/" data-track="activate_click" style="color:var(--blue)">Ativar assinatura</a></p>
+        </div>
       </div>
+      <p class="fine-print">*R$ 19,90 por 30 dias, dividido por dia (valor aproximado).</p>
     </div>
   </section>
 
@@ -356,7 +371,7 @@
         <details><summary>O Vídeo Fácil é grátis?</summary><p>Você pode usar o programa gratuitamente por 30 dias. Depois, a renovação é manual por R$ 19,90 para mais 30 dias.</p></details>
         <details><summary>Preciso criar conta ou cadastrar cartão para testar?</summary><p>Não. O teste de 30 dias não exige cadastro nem cartão para começar a usar.</p></details>
         <details><summary>Apareceu um aviso azul do Windows. E agora?</summary><p>É normal com programas novos que o Windows ainda não conhece. Clique em "Mais informações" e depois em "Executar assim mesmo" para continuar a instalação.</p></details>
-        <details><summary>Funciona em qual sistema?</summary><p>O Vídeo Fácil foi feito para Windows 10 e Windows 11.</p></details>
+        <details><summary>Funciona em qual sistema?</summary><p>Funciona em computadores com Windows 10 ou Windows 11, de 64 bits. Não funciona no Windows 7, no celular ou no Mac.</p></details>
         <details><summary>Quais formatos posso baixar?</summary><p>Vídeo em MP4, MKV ou WEBM, ou só o áudio em MP3.</p></details>
         <details><summary>Consigo baixar em 1080p, 2K ou 4K?</summary><p>Sim, quando essas qualidades estiverem disponíveis no vídeo original.</p></details>
         <details><summary>A cobrança é automática?</summary><p>Não. A renovação é manual. Você só paga novamente quando quiser liberar mais 30 dias.</p></details>
@@ -370,16 +385,20 @@
     <div class="container">
       <div class="box">
         <h2>Comece agora. É grátis por 30 dias.</h2>
-        <p>Instale em 1 minuto e baixe seu primeiro vídeo hoje. Sem cartão, sem cadastro.</p>
+        <p>Instale, cole o link e baixe seu primeiro vídeo hoje. Sem cartão, sem cadastro.</p>
         <a class="btn btn-primary btn-lg" data-track="download_click"
            href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          Baixar grátis para Windows
+          Quero testar 30 dias grátis
         </a>
       </div>
     </div>
   </section>
 </main>
+<div class="sticky-cta" id="sticky" hidden>
+  <span><b>30 dias grátis</b> · sem cartão</span>
+  <a class="btn btn-primary btn-sm" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Testar grátis</a>
+</div>
 
 <footer>
   <div class="container">
@@ -396,7 +415,8 @@
   </div>
 </footer>
 
-<script src="./js/site.js" defer></script>
-<script src="./js/demo.js" defer></script>
+<script src="./js/site.js?v=2" defer></script>
+<script src="./js/demo.js?v=2" defer></script>
+<script src="./js/vender.js?v=2" defer></script>
 </body>
 </html>
