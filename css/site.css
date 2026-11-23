@@ -385,3 +385,20 @@ footer { padding: 44px 0 52px; border-top: 1px solid var(--border); color: var(-
 .m-old { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .5s ease, opacity .4s ease; }
 .m-old > * { overflow: hidden; }
 .m-new.is-shown + .m-old { grid-template-rows: 0fr; opacity: 0; }
+
+/* --- Pagamento --- */
+.pay-form { display: grid; gap: 14px; margin: 22px 0 10px; }
+.pay-form label, .pay-copy { display: grid; gap: 6px; font-size: 14px; font-weight: 700; color: var(--muted); }
+.pay-form input, .pay-copy textarea {
+  width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--border-strong);
+  background: #11151c; color: var(--text); font: 500 16px var(--font);
+}
+.pay-copy textarea { font-size: 13px; resize: none; word-break: break-all; }
+.pay-form input:focus, .pay-copy textarea:focus { outline: 2px solid var(--blue); border-color: transparent; }
+.price-card .btn[disabled] { opacity: .6; cursor: wait; }
+.qr-steps { padding-left: 20px; color: #cfd6e2; margin: 14px 0; }
+#p-img { display: block; margin: 0 auto 18px; padding: 12px; background: #fff; border-radius: 14px; }
+#p-copy { margin-top: 12px; }
+.waiting { display: flex; gap: 10px; align-items: center; justify-content: center; margin: 18px 0 0; }
+.waiting span { width: 10px; height: 10px; border-radius: 50%; background: var(--success); animation: pulsar 1.4s infinite; }
+@keyframes pulsar { 50% { opacity: .25; } }

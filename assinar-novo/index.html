@@ -30,11 +30,25 @@
 <div class="price-card" id="p-pay" hidden>
   <div class="price-label">Assinatura do Vídeo Fácil</div>
   <p class="price">R$ 19,90 <small>por 30 dias</small></p>
-  <p class="per-day">Menos de <b>R$ 0,70 por dia</b></p>
-  <ul class="price-list"><li>Pix ou cartão</li><li>Licença liberada neste computador após a confirmação</li><li>Sem cobrança automática</li></ul>
-  <button class="btn btn-primary" id="p-button" type="button">Pagar R$ 19,90</button>
+  <p class="per-day">Menos de <b>R$ 0,70 por dia</b> · sem cobrança automática</p>
+  <form id="p-form" class="pay-form" novalidate>
+    <label>Nome completo<input id="p-name" name="name" autocomplete="name" maxlength="100" required></label>
+    <label>CPF<input id="p-cpf" name="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off" required></label>
+    <button class="btn btn-primary" id="p-pix" type="submit">Pagar com Pix</button>
+  </form>
+  <button class="btn btn-ghost" id="p-card" type="button">Pagar com cartão</button>
   <p class="note" id="p-msg" role="status" hidden></p>
-  <p class="small">O pagamento é feito na página segura do Asaas. O Vídeo Fácil não recebe os dados do seu cartão.</p>
+  <p class="small">Pagamento processado pelo Asaas. O nome e o CPF são enviados ao Asaas para gerar o Pix e não ficam guardados no nosso servidor. O Vídeo Fácil não recebe os dados do seu cartão.</p>
+</div>
+<div class="price-card" id="p-qr" hidden>
+  <div class="price-label">Pague com Pix</div>
+  <p class="price">R$ 19,90</p>
+  <ol class="qr-steps"><li>Abra o aplicativo do seu banco e escolha <b>Pix</b>.</li><li>Leia o QR Code ou use o <b>copia e cola</b>.</li><li>Pronto! Esta página avisa quando confirmar.</li></ol>
+  <img id="p-img" alt="QR Code do Pix" width="240" height="240">
+  <label class="pay-copy">Pix copia e cola<textarea id="p-code" rows="3" readonly></textarea></label>
+  <button class="btn btn-primary" id="p-copy" type="button">Copiar código Pix</button>
+  <p class="waiting" role="status"><span></span>Aguardando o pagamento…</p>
+  <p class="note" id="p-qrslow" hidden>Ainda não chegou a confirmação. Se você já pagou, não pague de novo: a licença é liberada assim que o banco confirmar.</p>
 </div>
 <div class="price-card" id="p-noapp" hidden><h1 style="font-size:30px">Abra pelo programa</h1>
   <p>Para liberar a licença no computador certo, abra o <strong>Vídeo Fácil</strong> e clique em <strong>Ativar assinatura</strong>.</p>
