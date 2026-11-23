@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/site.css?v=3">
-  <link rel="stylesheet" href="./css/azul.css?v=6">
+  <link rel="stylesheet" href="./css/azul.css?v=8">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,23 +73,48 @@
 </header>
 
 <main>
-  <section class="hero" id="inicio">
-    <div class="container hero-center">
-      <div class="hero-text">
-        <span class="pill">30 dias grátis · sem cartão · sem cadastro</span>
+  <section class="hero hero-split" id="inicio">
+    <span class="deco d1" aria-hidden="true"></span><span class="deco d2" aria-hidden="true"></span>
+    <div class="container split">
+      <div class="split-text">
+        <span class="kicker">Vídeo Fácil para Windows</span>
         <h1>Baixe os vídeos que você precisa. <span class="accent">Com um clique.</span></h1>
         <p class="lead">Chega de site cheio de propaganda e botão falso. Copie o link do YouTube, clique em <strong>Colar link</strong> e o vídeo já começa a baixar no seu computador.</p>
         <div class="cta-row">
-          <a class="btn btn-primary btn-lg" data-track="download_click"
-             href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">
+          <a class="btn btn-primary btn-lg" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
             Quero testar 30 dias grátis
           </a>
-          <a class="btn btn-ghost btn-lg" href="#como-instalar">Como instalar</a>
+          <a class="btn btn-ghost btn-lg" href="#como-funciona">Ver como funciona</a>
         </div>
-        <p class="risk">Você usa 30 dias sem pagar nada. Não gostou? É só não renovar.</p>
+        <ul class="ticks">
+          <li>30 dias grátis</li>
+          <li>Sem cartão e sem cadastro</li>
+          <li>Em português</li>
+        </ul>
+        <p class="risk">Não gostou? É só não renovar.</p>
       </div>
+      <div class="split-art" aria-hidden="true">
+        <span class="blob"></span>
+        <div class="win">
+          <div class="w-top"><img src="./img/icone.png" alt=""><b>Vídeo Fácil</b><i></i><i></i><i></i></div>
+          <div class="w-body">
+            <b class="w-h">Novo download</b>
+            <div class="w-row"><span>Cole aqui o link do YouTube</span><em>Colar link</em></div>
+            <div class="w-sel"><span>MP4</span><span>1080p</span><span>Downloads</span></div>
+            <div class="w-vid"><div class="art art-culto"><strong>CULTO DE<br>DOMINGO</strong></div><div><b>Culto de Domingo</b><small>1:42:08 • Canal da Igreja</small><div class="w-bar"><i></i></div><small>72% • faltam 28 s</small></div></div>
+            <div class="w-vid"><div class="art art-aula"><strong>AULA 1</strong></div><div><b>Violão para iniciantes</b><small>24:51 • MP4 • 720p</small><span class="w-ok">✓ Concluído</span></div></div>
+          </div>
+        </div>
+        <div class="float f1"><span>4K</span>Alta qualidade</div>
+        <div class="float f2"><span>MP3</span>Só o áudio também</div>
+      </div>
+    </div>
+  </section>
 
+  <section class="band" id="como-funciona">
+    <div class="container hero-center">
+      <div class="section-head center band-head"><span class="eyebrow">Como funciona</span><h2>Simples do começo ao fim.</h2></div>
       <div class="carousel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="O que o Vídeo Fácil faz">
         <div class="c-view"><div class="c-track">
           <article class="slide s-um" aria-roledescription="slide" aria-label="1 de 4">
@@ -121,7 +146,7 @@
     </div>
   </section>
 
-  <section class="section-alt" id="comparativo">
+  <section id="comparativo">
     <div class="container">
       <div class="section-head center">
         <span class="eyebrow">Por que o Vídeo Fácil</span>
@@ -146,7 +171,7 @@
     </div>
   </section>
 
-  <section id="para-que-serve">
+  <section class="section-alt" id="para-que-serve">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Para que serve</span>
@@ -176,33 +201,6 @@
         </div>
       </div>
       <div class="mid-cta"><p>Qual vídeo você vai baixar primeiro?</p><a class="btn btn-primary btn-lg" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Quero testar 30 dias grátis</a></div>
-    </div>
-  </section>
-
-  <section class="section-alt" id="como-funciona">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Como funciona</span>
-        <h2>Do link ao arquivo em 3 passos.</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="num">1</div>
-          <h3>Copie o link</h3>
-          <p>No YouTube, copie o endereço do vídeo que você quer baixar.</p>
-        </div>
-        <div class="step">
-          <div class="num">2</div>
-          <h3>Clique em Colar link</h3>
-          <p>O Vídeo Fácil mostra a imagem, o nome e a duração do vídeo e já começa a baixar.</p>
-        </div>
-        <div class="step">
-          <div class="num">3</div>
-          <h3>Pronto</h3>
-          <p>O arquivo fica salvo na pasta que você escolheu e aparece no seu histórico.</p>
-        </div>
-      </div>
-      <p class="note"><strong>Dica:</strong> antes de colar o link, escolha o formato (MP4, MKV, WEBM ou MP3), a qualidade e a pasta onde salvar. O programa lembra das suas escolhas.</p>
     </div>
   </section>
 
