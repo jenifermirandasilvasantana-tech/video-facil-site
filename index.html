@@ -14,13 +14,14 @@
   <meta property="og:url" content="https://videofacilapp.com.br/">
   <meta property="og:image" content="https://videofacilapp.com.br/img/compartilhar.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#0b0e13">
+  <meta name="theme-color" content="#0f3fbf">
   <link rel="icon" type="image/png" href="./favicon.png">
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/site.css?v=2">
+  <link rel="stylesheet" href="./css/site.css?v=3">
+  <link rel="stylesheet" href="./css/azul.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -87,84 +88,35 @@
           <a class="btn btn-ghost btn-lg" href="#como-instalar">Como instalar</a>
         </div>
         <p class="risk">Você usa 30 dias sem pagar nada. Não gostou? É só não renovar.</p>
-        <ul class="offer" aria-label="Condições">
-          <li><b>R$ 0</b><span>para começar</span></li>
-          <li><b>30 dias</b><span>grátis, completo</span></li>
-          <li><b>Sem cartão</b><span>e sem cadastro</span></li>
-          <li><b>R$ 0,66</b><span>por dia, se continuar*</span></li>
-        </ul>
       </div>
 
-      <div class="shot">
-        <div class="shot-bar" aria-hidden="true"><span></span><span></span><span></span></div>
-        <!-- Demonstração animada do programa, desenhada em código (nítida em qualquer tela). -->
-        <div class="mock" id="demo" role="img" aria-label="Demonstração: um link do YouTube é colado no Vídeo Fácil, a miniatura aparece, a barra vai até 100% e o vídeo entra no histórico">
-          <div class="m-top">
-            <div class="m-brand">
-              <img src="./img/icone.png" alt="">
-              <div><b>Vídeo Fácil</b><small>Seus vídeos salvos com qualidade</small></div>
-            </div>
-            <div class="m-right">
-              <span class="m-btn">Ativar assinatura</span>
-              <span class="m-pill">● Teste grátis · 30 dias</span>
-              <span class="m-ver">v1.11.48</span>
-            </div>
-          </div>
-          <div class="m-body">
-            <div class="m-card">
-              <b class="m-h">Novo download</b>
-              <small class="m-sub">Escolha as opções e clique em Colar link: o download começa sozinho.</small>
-              <div class="m-row">
-                <span class="m-input" data-demo="input">Cole aqui o link do YouTube</span>
-                <span class="m-btn m-paste" data-demo="paste">Colar link<span class="m-cursor" aria-hidden="true"></span></span>
-              </div>
-              <div class="m-opts">
-                <div><small>FORMATO</small><span class="m-sel">MP4</span></div>
-                <div><small>QUALIDADE</small><span class="m-sel">1080p</span></div>
-                <div><small>SALVAR EM</small><span class="m-sel">Downloads</span></div>
-              </div>
-              <div class="m-prev" data-demo="prev">
-                <div class="m-thumb">
-                  <div class="art art-culto"><em>AO VIVO</em><strong>CULTO DE<br>DOMINGO</strong><span>Louvor e Palavra</span></div>
-                  <span class="m-ring" data-demo="ring"><span class="m-pause"></span></span>
-                </div>
-                <div class="m-info">
-                  <b data-demo="title">O nome e a imagem do vídeo aparecerão aqui.</b>
-                  <small data-demo="meta"></small>
-                </div>
-              </div>
-              <div class="m-bar"><span data-demo="bar"></span></div>
-              <div class="m-status"><b data-demo="pct"></b><small data-demo="status">Pronto para começar</small></div>
-            </div>
-            <div class="m-hist">
-              <b class="m-h">Downloads recentes</b>
-              <span class="m-search">Pesquisar vídeo ou canal...</span>
-              <span class="m-clear">Limpar</span>
-            </div>
-            <div class="m-new" data-demo="new"><div>
-              <small class="m-group">HOJE</small>
-              <div class="m-item">
-                <div class="art art-culto mini"><strong>CULTO DE<br>DOMINGO</strong></div>
-                <div class="m-info">
-                  <b>Culto de Domingo — Louvor e Palavra (completo)</b>
-                  <small>1:42:08 • 1.8 GB • MP4 • 1080p • agora mesmo</small>
-                </div>
-                <span class="m-icons"><i class="m-ic-folder"></i><i class="m-ic-trash"></i></span>
-              </div>
-            </div></div>
-            <div class="m-old"><div>
-            <small class="m-group">ONTEM</small>
-            <div class="m-item">
-              <div class="art art-aula mini"><strong>AULA 1</strong></div>
-              <div class="m-info">
-                <b>Violão para iniciantes — Aula 1: primeiros acordes</b>
-                <small>24:51 • 312 MB • MP4 • 720p</small>
-              </div>
-              <span class="m-icons"><i class="m-ic-folder"></i><i class="m-ic-trash"></i></span>
-            </div>
-            </div></div>
-          </div>
-        </div>
+      <div class="carousel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="O que o Vídeo Fácil faz">
+        <div class="c-view"><div class="c-track">
+          <article class="slide s-um" aria-roledescription="slide" aria-label="1 de 4">
+            <div class="s-text"><span class="s-num">1</span><h2>Colou, baixou.</h2><p>Copie o link do YouTube e clique em <b>Colar link</b>. O download começa na hora.</p></div>
+            <div class="s-art" aria-hidden="true"><div class="u-box"><div class="u-field">youtube.com/watch?v=…</div><div class="u-btn">Colar link<i class="u-hand"></i></div></div>
+        <div class="u-ok"><span>✓</span> Vídeo encontrado. Baixando…</div></div>
+          </article>
+          <article class="slide s-dois" aria-roledescription="slide" aria-label="2 de 4">
+            <div class="s-text"><span class="s-num">2</span><h2>Vídeo ou só o áudio.</h2><p>Escolha a qualidade até <b>4K</b> ou salve só o som em <b>MP3</b> para ouvir no celular e no carro.</p></div>
+            <div class="s-art" aria-hidden="true"><div class="u-chips"><span class="on">MP4</span><span>MP3 ♪</span><span>MKV</span><span>WEBM</span></div>
+        <div class="u-chips u-q"><span>720p</span><span class="on">1080p</span><span>2K</span><span>4K</span></div></div>
+          </article>
+          <article class="slide s-tres" aria-roledescription="slide" aria-label="3 de 4">
+            <div class="s-text"><span class="s-num">3</span><h2>Veja tudo acontecendo.</h2><p>Porcentagem, velocidade e tempo que falta. <b>Pause</b> e continue quando quiser.</p></div>
+            <div class="s-art" aria-hidden="true"><div class="u-ring"><b>72%</b></div>
+        <div class="u-line"><i></i></div><div class="u-info"><span>9,2 MB/s</span><span>faltam 28 s</span></div></div>
+          </article>
+          <article class="slide s-quatro" aria-roledescription="slide" aria-label="4 de 4">
+            <div class="s-text"><span class="s-num">4</span><h2>Tudo guardado e organizado.</h2><p>Seus vídeos ficam no <b>histórico</b>, separados por dia. Ache e abra com um clique.</p></div>
+            <div class="s-art" aria-hidden="true"><div class="u-item"><i class="a"></i><div><b>Culto de Domingo</b><small>Hoje · 1080p</small></div><em>Abrir</em></div>
+        <div class="u-item"><i class="b"></i><div><b>Aula de violão</b><small>Ontem · 720p</small></div><em>Abrir</em></div>
+        <div class="u-item"><i class="c"></i><div><b>Louvores (MP3)</b><small>Ontem · áudio</small></div><em>Abrir</em></div></div>
+          </article>
+        </div></div>
+        <button class="c-arrow c-prev" type="button" aria-label="Anterior">‹</button>
+        <button class="c-arrow c-next" type="button" aria-label="Próximo">›</button>
+        <div class="c-dots"><button type="button" aria-label="Ver quadro 1"></button><button type="button" aria-label="Ver quadro 2"></button><button type="button" aria-label="Ver quadro 3"></button><button type="button" aria-label="Ver quadro 4"></button></div>
       </div>
     </div>
   </section>
@@ -416,7 +368,7 @@
 </footer>
 
 <script src="./js/site.js?v=2" defer></script>
-<script src="./js/demo.js?v=2" defer></script>
+<script src="./js/carrossel.js?v=3" defer></script>
 <script src="./js/vender.js?v=2" defer></script>
 </body>
 </html>
