@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/site.css?v=3">
-  <link rel="stylesheet" href="./css/azul.css?v=9">
+  <link rel="stylesheet" href="./css/azul.css?v=11">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,6 +63,7 @@
     <nav class="nav-links" aria-label="Seções">
       <a href="#para-que-serve">Para que serve</a>
       <a href="#recursos">Recursos</a>
+      <a href="#por-dentro">Conheça</a>
       <a href="#como-instalar">Como instalar</a>
       <a href="#preco">Preço</a>
       <a href="#faq">Dúvidas</a>
@@ -212,6 +213,31 @@
     </div>
   </section>
 
+  <section class="dentro" id="por-dentro">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Por dentro do programa</span>
+        <h2>Conheça antes de baixar.</h2>
+        <p>Clique em cada opção e veja como é simples.</p>
+      </div>
+      <div class="tour">
+        <div class="tour-tela">
+          <div role="tabpanel" id="p-baixar" aria-labelledby="t-baixar"><div class="win plana" aria-hidden="true"><div class="w-top"><img src="./img/icone.png" alt=""><b>Vídeo Fácil</b><i></i><i></i><i></i></div><div class="w-body"><b class="w-h">Novo download</b><div class="w-row"><span>Cole aqui o link do YouTube</span><em>Colar link</em></div><div class="w-sel"><span>MP4</span><span>1080p</span><span>Downloads</span></div><div class="w-vid"><div class="art art-receita"><strong>RECEITAS</strong></div><div><b>Bolo de cenoura da vovó</b><small>12:08 • Cozinha Simples</small><div class="w-bar parada"><i style="width:46%"></i></div><small>46% • faltam 40 s</small></div></div></div></div><p><b>Cole e pronto.</b> O download começa sozinho. Você vê o nome e a imagem do vídeo para ter certeza de que é o certo.</p></div>
+          <div role="tabpanel" id="p-mp3" aria-labelledby="t-mp3" hidden><div class="win plana" aria-hidden="true"><div class="w-top"><img src="./img/icone.png" alt=""><b>Vídeo Fácil</b><i></i><i></i><i></i></div><div class="w-body"><b class="w-h">Novo download</b><div class="w-row"><span>Cole aqui o link do YouTube</span><em>Colar link</em></div><div class="w-sel"><span class="hl">MP3</span><span>Só o áudio</span><span>Músicas</span></div><div class="w-vid"><div class="art art-musica"><strong>♪ MP3</strong></div><div><b>Louvores para orar</b><small>58:20 • Só o áudio</small><span class="w-ok">✓ Concluído</span></div></div></div></div><p><b>A música sem o vídeo.</b> Escolha MP3 e fica só o som: louvor, pregação, aula ou podcast.</p></div>
+          <div role="tabpanel" id="p-pausar" aria-labelledby="t-pausar" hidden><div class="win plana" aria-hidden="true"><div class="w-top"><img src="./img/icone.png" alt=""><b>Vídeo Fácil</b><i></i><i></i><i></i></div><div class="w-body"><b class="w-h">Download pausado</b><div class="w-vid"><div class="art art-culto"><strong>CULTO DE<br>DOMINGO</strong></div><div><b>Culto de Domingo</b><small>1:42:08 • Canal da Igreja</small><div class="w-bar parada"><i style="width:64%"></i></div><small>64% • pausado</small></div></div><div class="w-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span>Clique para continuar de onde parou</span></div></div></div><p><b>Você manda no download.</b> Acompanhe a porcentagem e o tempo que falta. Pause e continue quando quiser.</p></div>
+          <div role="tabpanel" id="p-historico" aria-labelledby="t-historico" hidden><div class="win plana" aria-hidden="true"><div class="w-top"><img src="./img/icone.png" alt=""><b>Vídeo Fácil</b><i></i><i></i><i></i></div><div class="w-body"><b class="w-h">Downloads recentes</b><div class="w-row"><span>Pesquisar vídeo ou canal...</span></div><small class="w-dia">Hoje</small><div class="w-vid"><div class="art art-aula"><strong>AULA 1</strong></div><div><b>Violão para iniciantes</b><small>24:51 • MP4 • 720p</small><span class="w-ok">✓ Concluído</span></div></div><small class="w-dia">Ontem</small><div class="w-vid"><div class="art art-culto"><strong>CULTO</strong></div><div><b>Culto de Domingo</b><small>1:42:08 • MP4 • 1080p</small><span class="w-ok">✓ Concluído</span></div></div></div></div><p><b>Fácil de achar.</b> Tudo separado por Hoje, Ontem e Esta semana, com busca. Um clique abre a pasta do vídeo.</p></div>
+          <p class="ilustra">Telas ilustrativas.</p>
+        </div>
+        <div class="tour-abas" role="tablist" aria-label="Partes do programa">
+          <button type="button" role="tab" id="t-baixar" aria-controls="p-baixar" aria-selected="true" tabindex="0"><span>1</span><b>Baixar o vídeo<small>Copie o link e clique em Colar link</small></b></button>
+          <button type="button" role="tab" id="t-mp3" aria-controls="p-mp3" aria-selected="false" tabindex="-1"><span>2</span><b>Só o áudio em MP3<small>Para ouvir no carro e no celular</small></b></button>
+          <button type="button" role="tab" id="t-pausar" aria-controls="p-pausar" aria-selected="false" tabindex="-1"><span>3</span><b>Pausar e continuar<small>Pare agora e termine depois</small></b></button>
+          <button type="button" role="tab" id="t-historico" aria-controls="p-historico" aria-selected="false" tabindex="-1"><span>4</span><b>Seus vídeos guardados<small>Ache de novo em segundos</small></b></button>
+          </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-alt" id="como-instalar">
     <div class="container install">
       <div>
@@ -278,10 +304,10 @@
 
   <section class="section-alt" id="faq">
     <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">Dúvidas frequentes</span>
-        <h2>Perguntas comuns</h2>
-        <p>Respostas rápidas para você saber como funciona antes de baixar.</p>
+      <div class="faq-2">
+      <div class="faq-lado">
+        <div class="section-head"><span class="eyebrow">Dúvidas frequentes</span><h2>Perguntas comuns</h2><p>Respostas rápidas para você saber como funciona antes de baixar.</p></div>
+        <div class="ajuda"><b>Não achou sua resposta?</b><p>Conte o que aconteceu e, se puder, mande uma foto da tela.</p><a href="./suporte/">Falar com o suporte →</a></div>
       </div>
       <div class="faq">
         <details><summary>O Vídeo Fácil é grátis?</summary><p>Você pode usar o programa gratuitamente por 30 dias. Depois, a renovação é manual por R$ 19,90 para mais 30 dias.</p></details>
@@ -293,6 +319,7 @@
         <details><summary>A cobrança é automática?</summary><p>Não. A renovação é manual. Você só paga novamente quando quiser liberar mais 30 dias.</p></details>
         <details><summary>Posso pagar por Pix ou cartão?</summary><p>Sim. A ativação aceita pagamento por Pix e cartão. É só abrir o programa e clicar em Ativar assinatura.</p></details>
         <details><summary>O que faço se pagar e a licença não liberar?</summary><p>Entre em contato pela página de <a href="./suporte/" style="color:var(--blue)">Suporte</a> e informe o que aconteceu. Se possível, envie também uma captura de tela.</p></details>
+      </div>
       </div>
     </div>
   </section>
@@ -333,5 +360,6 @@
 
 <script src="./js/site.js?v=2" defer></script>
 <script src="./js/vender.js?v=2" defer></script>
+<script src="./js/tour.js?v=1" defer></script>
 </body>
 </html>

@@ -99,3 +99,32 @@ footer { background: #f4f7fc; }
 .w-body { grid-template-columns: minmax(0, 1fr); } .w-sel { grid-template-columns: repeat(3, minmax(0, 1fr)); } .w-sel span { overflow: hidden; text-overflow: ellipsis; }
 .hero-split h1 .accent { display: block; }
 @media (min-width: 961px) { .hero-split .cta-row { flex-wrap: nowrap; } .hero-split .btn-lg { padding: 0 22px; font-size: 16px; } }
+
+/* --- Por dentro do programa --- */
+.dentro { background: radial-gradient(circle at 85% 0, #1d4ed8 0, transparent 46%), #0b1a3d; color: #fff; }
+.dentro .eyebrow { color: #ffcf33; } .dentro .section-head p { color: #b9c9ea; }
+.tour { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.tour-tela > div { min-height: 452px; } .tour-tela p { margin: 18px 4px 0; color: #c9d6f0; } .tour-tela p b { color: #fff; }
+.tour-tela .ilustra { font-size: 13px; color: #93a7d1; margin-top: 10px; }
+.win.plana { transform: none; border: 1px solid #33487a; min-height: 366px; box-shadow: 0 30px 60px rgba(0, 0, 0, .35); }
+.parada i { animation: none !important; } .w-sel .hl { background: #ffcf33; color: #10224d; font-weight: 800; }
+.w-row .cheio, .w-row .cinza { flex: 1; text-align: center; } .w-row .cinza { background: #2a3140; } .w-dia { color: #97a1b3; font-size: 14px; font-weight: 700; }
+.tour-abas { display: grid; gap: 12px; }
+.tour-abas button { display: flex; gap: 16px; align-items: center; text-align: left; font: inherit; color: #fff; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); border-radius: 16px; padding: 18px; cursor: pointer; }
+.tour-abas button:hover { background: rgba(255, 255, 255, .11); } .tour-abas button:focus-visible { outline: 3px solid #ffcf33; outline-offset: 2px; }
+.tour-abas button > span { flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: rgba(255, 255, 255, .12); font-weight: 800; }
+.tour-abas small { display: block; font-size: 14px; font-weight: 500; color: #b9c9ea; margin-top: 2px; }
+.tour-abas [aria-selected=true] { background: rgba(255, 207, 51, .12); border-color: #ffcf33; } .tour-abas [aria-selected=true] > span { background: #ffcf33; color: #10224d; }
+/* --- Dúvidas em duas colunas --- */
+.faq-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr); gap: 48px; align-items: start; }
+.faq-lado { position: sticky; top: 100px; } .faq-lado .section-head { margin-bottom: 24px; } .faq-2 .faq { max-width: none; width: 100%; margin: 0; }
+.ajuda { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 22px; } .ajuda p { color: var(--muted); margin: 6px 0 12px; } .ajuda a { color: var(--blue); font-weight: 700; }
+@media (max-width: 960px) {
+  .tour { grid-template-columns: minmax(0, 1fr); } .tour-abas { order: -1; gap: 8px; } .tour-abas button { padding: 12px; } .tour-tela > div, .win.plana { min-height: 0; }
+  .faq-2 { grid-template-columns: minmax(0, 1fr); gap: 24px; } .faq-lado { position: static; }
+}
+.w-vid .art strong { white-space: nowrap; } .w-vid > .art:first-child { text-align: center; }
+.w-vid > .art { padding: 0; }
+.w-play { display: flex; align-items: center; gap: 16px; padding: 10px 4px; color: #c9d3e4; } .w-play svg { width: 58px; height: 58px; padding: 15px; border-radius: 50%; border: 4px solid #4c8dff; color: #fff; box-sizing: border-box; }
+@media (min-width: 961px) { .tour-tela > div { min-height: 560px; } }
+@media (max-width: 960px) { .tour-abas { grid-template-columns: 1fr 1fr; } .tour-abas small { display: none; } .tour-abas button { gap: 10px; font-size: 14px; } .tour-abas button > span { width: 32px; height: 32px; } }
