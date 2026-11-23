@@ -90,6 +90,6 @@ footer { background: #f4f7fc; }
 .slide { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-width: 0; }
 .s-art, .s-text { min-width: 0; }
 @media (max-width: 760px) {
-  .slide { grid-template-columns: minmax(0, 1fr); align-content: start; }
+  .slide { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; }
   .u-box { padding: 8px; gap: 6px; } .u-btn { padding: 12px; font-size: 15px; } .u-field { font-size: 14px; } .u-ring { width: 130px; height: 130px; } .u-ring b { font-size: 34px; }
 }
