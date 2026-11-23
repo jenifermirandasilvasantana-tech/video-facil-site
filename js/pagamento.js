@@ -44,6 +44,7 @@
 
   var ERRORS = {
     nome_invalido: "Digite o seu nome completo.",
+    email_invalido: "Esse e-mail não parece certo. Verifique.",
     cpf_invalido: "Esse CPF não confere. Verifique os números.",
     muitas_tentativas: "Muitas tentativas seguidas. Aguarde um pouco e tente de novo.",
     bloqueada: "Esta licença está bloqueada. Fale com o suporte.",
@@ -84,19 +85,32 @@
     this.value = d.replace(/^(\d{3})(\d)/, "$1.$2").replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3").replace(/\.(\d{3})(\d)/, ".$1-$2");
   });
 
+  // Nome e e-mail servem para o suporte encontrar o cliente; valem para Pix e cartão.
+  function customer() {
+    var name = $("p-name").value.trim(), email = $("p-email").value.trim();
+    if (name.length < 3) { message(ERRORS.nome_invalido); $("p-name").focus(); return null; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { message(ERRORS.email_invalido); $("p-email").focus(); return null; }
+    return { name: name, email: email };
+  }
+
   $("p-form").addEventListener("submit", function (event) {
     event.preventDefault();
-    send($("p-pix"), "/api/pay/pix", { name: $("p-name").value, cpf: $("p-cpf").value }, function (d) {
+    var data = customer();
+    if (!data) return;
+    data.cpf = $("p-cpf").value;
+    send($("p-pix"), "/api/pay/pix", data, function (d) {
       $("p-img").src = "data:image/png;base64," + d.image;
       $("p-code").value = d.code;
-      $("p-name").value = ""; $("p-cpf").value = "";
+      $("p-name").value = ""; $("p-email").value = ""; $("p-cpf").value = "";
       show("qr");
       watch(d.pedido, "p-qrslow");
     });
   });
 
   $("p-card").addEventListener("click", function () {
-    send($("p-card"), "/api/pay/checkout", {}, function (d) { location.href = d.url; });
+    var data = customer();
+    if (!data) return;
+    send($("p-card"), "/api/pay/checkout", data, function (d) { location.href = d.url; });
   });
 
   $("p-copy").addEventListener("click", function () {

@@ -33,12 +33,13 @@
   <p class="per-day">Menos de <b>R$ 0,70 por dia</b> · sem cobrança automática</p>
   <form id="p-form" class="pay-form" novalidate>
     <label>Nome completo<input id="p-name" name="name" autocomplete="name" maxlength="100" required></label>
-    <label>CPF<input id="p-cpf" name="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off" required></label>
+    <label>E-mail<input id="p-email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="seu@email.com" required></label>
+    <label><span>CPF (só para o Pix)</span><input id="p-cpf" name="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off" required></label>
     <button class="btn btn-primary" id="p-pix" type="submit">Pagar com Pix</button>
   </form>
   <button class="btn btn-ghost" id="p-card" type="button">Pagar com cartão</button>
   <p class="note" id="p-msg" role="status" hidden></p>
-  <p class="small">Pagamento processado pelo Asaas. O nome e o CPF são enviados ao Asaas para gerar o Pix e não ficam guardados no nosso servidor. O Vídeo Fácil não recebe os dados do seu cartão.</p>
+  <p class="small">Pagamento processado pelo Asaas. O nome e o e-mail ficam no seu cadastro para o suporte. O CPF vai só para o Asaas gerar o Pix e não fica guardado no nosso servidor. O Vídeo Fácil não recebe os dados do seu cartão.</p>
 </div>
 <div class="price-card" id="p-qr" hidden>
   <div class="price-label">Pague com Pix</div>
