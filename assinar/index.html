@@ -1,8 +1,79 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex">
-<title>Ativar assinatura | Vídeo Fácil</title>
-<script>location.replace("https://video-facil.floot.app/assinar" + location.search);</script>
-<noscript><meta http-equiv="refresh" content="0; url=https://video-facil.floot.app/assinar"></noscript>
-</head><body style="background:#0b0e13;color:#e8ebf0;font-family:Segoe UI,sans-serif;padding:40px">
-<p>Abrindo a página de ativação… <a style="color:#4c8dff" href="https://video-facil.floot.app/assinar">Clique aqui se não abrir.</a></p>
-</body></html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assinar o Vídeo Fácil</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0e13">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../" aria-label="Vídeo Fácil, início"><img src="../img/icone.png" alt="" width="34" height="34">Vídeo Fácil</a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="../#recursos">Recursos</a>
+      <a href="../#como-funciona">Como funciona</a>
+      <a href="../#preco">Preço</a>
+      <a href="../#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" data-track="download_click" href="https://github.com/jenifermirandasilvasantana-tech/video-facil-updates/releases/latest/download/Instalador-Video-Facil.exe">Baixar grátis</a>
+  </div>
+</header>
+<main class="doc"><div class="container" style="max-width:560px">
+<noscript><p>Ative o JavaScript do navegador para assinar.</p></noscript>
+<div class="price-card" id="p-pay" hidden>
+  <div class="price-label">Assinatura do Vídeo Fácil</div>
+  <p class="price">R$ 19,90 <small>por 30 dias</small></p>
+  <p class="per-day">Menos de <b>R$ 0,70 por dia</b> · sem cobrança automática</p>
+  <form id="p-form" class="pay-form" novalidate>
+    <label>Nome completo<input id="p-name" name="name" autocomplete="name" maxlength="100" required></label>
+    <label>CPF<input id="p-cpf" name="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off" required></label>
+    <button class="btn btn-primary" id="p-pix" type="submit">Pagar com Pix</button>
+  </form>
+  <button class="btn btn-ghost" id="p-card" type="button">Pagar com cartão</button>
+  <p class="note" id="p-msg" role="status" hidden></p>
+  <p class="small">Pagamento processado pelo Asaas. O nome e o CPF são enviados ao Asaas para gerar o Pix e não ficam guardados no nosso servidor. O Vídeo Fácil não recebe os dados do seu cartão.</p>
+</div>
+<div class="price-card" id="p-qr" hidden>
+  <div class="price-label">Pague com Pix</div>
+  <p class="price">R$ 19,90</p>
+  <ol class="qr-steps"><li>Abra o aplicativo do seu banco e escolha <b>Pix</b>.</li><li>Leia o QR Code ou use o <b>copia e cola</b>.</li><li>Pronto! Esta página avisa quando confirmar.</li></ol>
+  <img id="p-img" alt="QR Code do Pix" width="240" height="240">
+  <label class="pay-copy">Pix copia e cola<textarea id="p-code" rows="3" readonly></textarea></label>
+  <button class="btn btn-primary" id="p-copy" type="button">Copiar código Pix</button>
+  <p class="waiting" role="status"><span></span>Aguardando o pagamento…</p>
+  <p class="note" id="p-qrslow" hidden>Ainda não chegou a confirmação. Se você já pagou, não pague de novo: a licença é liberada assim que o banco confirmar.</p>
+</div>
+<div class="price-card" id="p-noapp" hidden><h1 style="font-size:30px">Abra pelo programa</h1>
+  <p>Para liberar a licença no computador certo, abra o <strong>Vídeo Fácil</strong> e clique em <strong>Ativar assinatura</strong>.</p>
+  <a class="btn btn-primary" href="../">Ainda não tenho o programa</a></div>
+<div class="price-card" id="p-wait" hidden><h1 style="font-size:30px">Confirmando seu pagamento…</h1>
+  <p>Assim que o pagamento for confirmado, esta página avisa. Pode deixar aberta.</p>
+  <p class="note" id="p-slow" hidden>Está demorando um pouco mais. Se você já pagou, não pague de novo: a licença será liberada quando a confirmação chegar. Se precisar, <a href="../suporte/" style="color:var(--blue)">fale com o suporte</a>.</p></div>
+<div class="price-card" id="p-done" hidden><h1 style="font-size:30px;color:#5be0a8">Pagamento confirmado! ✓</h1>
+  <p>Sua licença foi liberada por mais 30 dias. Feche e abra o <strong>Vídeo Fácil</strong> para atualizar.</p></div>
+</div></main>
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a class="brand" href="../"><img src="../img/icone.png" alt="" width="30" height="30">Vídeo Fácil</a>
+      <nav class="foot-links" aria-label="Links do rodapé">
+        <a href="../assinar/" data-track="activate_click">Ativar assinatura</a>
+        <a href="../suporte/">Suporte</a>
+        <a href="../termos-de-uso/">Termos de Uso</a>
+        <a href="../politica-de-privacidade/">Privacidade</a>
+      </nav>
+    </div>
+    <p class="disclaimer">Use o programa apenas para conteúdos que você tenha direito ou autorização para baixar. YouTube é marca registrada do Google LLC; o Vídeo Fácil não tem ligação com o YouTube ou com o Google.</p>
+  </div>
+</footer>
+<script src="../js/site.js" defer></script>
+<script src="../js/pagamento.js" defer></script>
+</body>
+</html>
