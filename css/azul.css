@@ -128,3 +128,12 @@ footer { background: #f4f7fc; }
 .w-play { display: flex; align-items: center; gap: 16px; padding: 10px 4px; color: #c9d3e4; } .w-play svg { width: 58px; height: 58px; padding: 15px; border-radius: 50%; border: 4px solid #4c8dff; color: #fff; box-sizing: border-box; }
 @media (min-width: 961px) { .tour-tela > div { min-height: 560px; } }
 @media (max-width: 960px) { .tour-abas { grid-template-columns: 1fr 1fr; } .tour-abas small { display: none; } .tour-abas button { gap: 10px; font-size: 14px; } .tour-abas button > span { width: 32px; height: 32px; } }
+
+/* --- Guias --- */
+.passos { counter-reset: p; list-style: none; padding: 0; margin: 8px 0 28px; display: grid; gap: 12px; }
+.passos li { counter-increment: p; position: relative; padding: 16px 18px 16px 64px; background: #fff; border: 1px solid var(--border); border-radius: 16px; color: #3d4a63; }
+.passos li::before { content: counter(p); position: absolute; left: 16px; top: 14px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--blue); color: #fff; font-weight: 800; }
+.passos b { color: var(--text); }
+.doc h3 { margin: 22px 0 6px; font-size: 18px; color: var(--text); }
+.doc .voltar { display: table; margin-bottom: 18px; color: var(--blue); font-weight: 600; }
+a.card { display: block; color: inherit; text-decoration: none; } a.card:hover { border-color: var(--blue); }
